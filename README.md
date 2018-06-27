@@ -17,4 +17,4 @@ myself生产环境配置文件
 finance开发环境配置文件
 
 # finance-prod.properties
-finance开发环境配置文件
+finance生产环境配置文件

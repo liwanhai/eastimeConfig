@@ -1,0 +1,29 @@
+server:
+    port: 8080
+
+spring:
+    application:
+            name: asauth
+    thymeleaf:
+        prefix: classpath:/static/
+
+auth:
+    callback: http://localhost:8080/auth/notify
+    login: http://localhost:8080/login/loginPage
+    checkAuth: http://localhost:8080/auth/checkAuth
+
+
+mybatis:
+    type-aliases-package: com.easttime.auth.entry
+    mapper-locations: classpath:com.easttime.auth.mapper/*.xml
+
+mapper:
+    mappers:
+        - com.dtdream.cma.common.dao.DbSqlMapper
+    not-empty: false
+    identity: MYSQL
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://192.168.0.139:8080/eureka/ 

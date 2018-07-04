@@ -14,8 +14,8 @@ auth:
 
 
 mybatis:
-    type-aliases-package: com.easttime.auth.entry
-    mapper-locations: classpath:com.easttime.auth.mapper/*.xml
+    type-aliases-package: com.eastime.auth.entry
+    mapper-locations: classpath:com.eastime.auth.mapper/*.xml
 
 mapper:
     mappers:
